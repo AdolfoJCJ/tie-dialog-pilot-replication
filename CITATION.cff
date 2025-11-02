@@ -1,0 +1,12 @@
+
+cff-version: 1.2.0
+title: "TIE–Dialog Pilot Replication"
+message: "If you use this repository, please cite it as below."
+type: software
+authors:
+  - family-names: "Céspedes Jiménez"
+    given-names: "Adolfo J."
+version: "0.1.0"
+date-released: "2025-11-02"
+repository-code: "https://example.com/your-repo-url"
+keywords: [coherence, conversational-analysis, DTW, F1, kappa, TIE-Dialog, TEI]

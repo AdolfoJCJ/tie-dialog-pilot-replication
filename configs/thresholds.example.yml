@@ -1,0 +1,6 @@
+
+# Alternative thresholds you can try quickly by swapping config path.
+events:
+  peak_prominence: 0.10
+  valley_prominence: 0.10
+  min_distance: 3

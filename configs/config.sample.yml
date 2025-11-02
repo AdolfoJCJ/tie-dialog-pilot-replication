@@ -1,0 +1,27 @@
+
+seed: 42
+data:
+  ct_series: data/raw/ct_series.all.csv
+  events: data/raw/events_template.from_excel.csv
+outputs:
+  figures_dir: reports/figures
+  artifacts_dir: reports/artifacts
+  pdf_report: reports/pilot_report.pdf
+analysis:
+  smoothing:
+    method: rolling
+    window: 3
+  events:
+    peak_prominence: 0.08
+    valley_prominence: 0.08
+    min_distance: 2
+  windows: [1,2,3]
+  dtw:
+    method: dtaidistance
+    normalize: true
+    psi: 0
+    window: null
+plotting:
+  dpi: 160
+  figsize: [10, 4]
+  font_size: 11

@@ -1,0 +1,36 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+venv/
+build/
+develop-eggs/
+dist/
+downloads/
+.eggs/
+*.egg-info/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/raw/*
+data/external/*
+data/interim/*
+data/processed/*
+!data/README.md
+
+# Reports
+reports/figures/*
+reports/artifacts/*
+reports/*.pdf
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+
+# Core
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+scipy>=1.13
+matplotlib>=3.9
+# dtw
+dtaidistance>=2.3.11
+# yaml & logging
+pyyaml>=6.0.2
+rich>=13.9
+# optional (comment out if not needed)
+# sentence-transformers>=2.7
+# fastdtw>=0.3.4
