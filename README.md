@@ -90,7 +90,7 @@ Place your CSVs in `data/raw/`. Minimum expected files:
 - `events_template.sample.csv` — event annotations:
   - `dialogue_id`, `turn`, `human_peak`, `human_valley`, `machine_peak`, `machine_valley` (0/1 flags)
 
-> You can replace the sample files with the actual data, keeping headers.
+> You can replace the sample files with your actual data, keeping headers.
 
 ---
 
@@ -116,7 +116,7 @@ Key params:
 
 ## 6) Citing
 
-See `CITATION.cff`. 
+See `CITATION.cff`. Please also cite the TIE/TIE–Dialog preprints if applicable.
 
 ---
 

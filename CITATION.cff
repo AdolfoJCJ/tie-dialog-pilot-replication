@@ -8,5 +8,5 @@ authors:
     given-names: "Adolfo J."
 version: "0.1.0"
 date-released: "2025-11-02"
-repository-code: "https://example.com/your-repo-url"
+repository-code: "https://github.com/AdolfoJCJ/tie-dialog-pilot-replication/tree/main"
 keywords: [coherence, conversational-analysis, DTW, F1, kappa, TIE-Dialog, TEI]
