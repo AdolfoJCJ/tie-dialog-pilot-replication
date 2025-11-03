@@ -4,7 +4,7 @@
 This repository contains the full computational pipeline, datasets, and figure-generation scripts used in the paper:
 
 > **Céspedes Jiménez, A. J. (2025). _Human–Machine Convergence in the TIE–Dialog Pilot Study._ University of Groningen — Faculty of Arts.**  
-> DOI: [10.5281/zenodo.17516211](https://doi.org/10.5281/zenodo.17516211)
+> DOI: https://doi.org/10.5281/zenodo.17516354
 
 ---
 
@@ -148,7 +148,13 @@ If you use this repository, please cite:
 ```
 Céspedes Jiménez, A. J. (2025).
 Human–Machine Convergence in the TIE–Dialog Pilot Study (v1.0).
-Zenodo. https://doi.org/10.5281/zenodo.17516211
+## Data & Replication
+
+All code, datasets, and figure-generation scripts are fully available at Zenodo:
+
+- **Replication package** — [10.5281/zenodo.17516211](https://doi.org/10.5281/zenodo.17516211)
+- **Preprint (Quantifying Conversational Coherence: Human–Machine Convergence in the TIE–Dialog Pilot Study)** — [10.5281/zenodo.17516354](https://doi.org/10.5281/zenodo.17516354)
+
 ```
 
 ---
