@@ -57,6 +57,7 @@ Artifacts will be saved under `reports/` and `reports/figures/`.
 │   └── METHODS.md
 ├── scripts/
 │   └── run_pipeline.py
+        generate_appendix_figures.py         
 ├── src/
 │   ├── tie_dialog/
 │   │   ├── __init__.py
