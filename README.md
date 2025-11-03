@@ -28,9 +28,8 @@ Under the **Theory of Informational Emergence (TIE)**, conversational coherence 
 
 The TIE–Dialog framework models this coupling as a temporal coherence function:
 
-\[
-\mathcal{C}_t = f(\mathrm{sim}(I_S, I_M), \partial_t)
-\]
+C_t = f(sim(IS, IM), dt)
+
 
 Coherence peaks (repairs) and valleys (ruptures) emerge as structural markers of shared understanding.
 
@@ -170,10 +169,8 @@ Email: [a.j.cespedes.jimenez@student.rug.nl](mailto:a.j.cespedes.jimenez@student
 ## 🌐 Related resources
 - [Preprint (Zenodo)](https://doi.org/10.5281/zenodo.17516211)
 - [Supplementary Appendices PDF](https://doi.org/10.5281/zenodo.17516211)
-- [Theory of Informational Emergence (TIE)](https://www.researchgate.net/publication/xxxxx)
-- [CNøde Project](https://github.com/AdolfoJCJ)
 
 ---
 
 **Last updated:** November 2025  
-*This repository is part of the ongoing development of the Theory of Informational Emergence (TEI) and its computational extensions.*
+*This repository is part of the ongoing development of the Theory of Informational Emergence (TIE) and its computational extensions.*
