@@ -219,3 +219,62 @@ plt.savefig("tie_dialog_architecture.png", dpi=300, bbox_inches="tight")
 
 from google.colab import files
 files.download("tie_dialog_architecture.png")
+
+# ============================================
+# Simulated Figure 3 - Human vs Model Coherence
+# ============================================
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# 1) Parámetros de la simulación
+np.random.seed(42)        # para reproducibilidad
+n_turns = 24              # número de turnos (ajusta si quieres)
+turns = np.arange(1, n_turns + 1)
+
+# 2) Trayectoria humana (Cₜ–Iₘ)
+#    Base alrededor de 0.8 con pequeñas oscilaciones suaves
+base_level = 0.80
+trend = 0.01 * np.sin(np.linspace(0, 2*np.pi, n_turns))  # oscilación suave
+noise_h = np.random.normal(0, 0.008, size=n_turns)       # ruido pequeño
+Ct_human = base_level + trend + noise_h
+
+# 3) Trayectoria modelo (Cₜ local)
+#    Más baja, algo más ruidosa pero claramente correlacionada
+offset = -0.12                       # el modelo va por debajo
+noise_m = np.random.normal(0, 0.015, size=n_turns)
+Ct_model = Ct_human + offset + noise_m
+
+# 4) Guardar datos por si quieres usarlos
+df_sim = pd.DataFrame({
+    "turn": turns,
+    "Ct_human": Ct_human,
+    "Ct_model": Ct_model,
+})
+df_sim.to_csv("figure3_simulated_data.csv", index=False)
+print("CSV con datos simulados guardado como figure3_simulated_data.csv")
+display(df_sim.head())
+
+# 5) Generar la figura
+plt.figure(figsize=(8, 3))
+
+plt.plot(df_sim["turn"], df_sim["Ct_human"], label="Human (Cₜ–Iₘ, field alignment)")
+plt.plot(df_sim["turn"], df_sim["Ct_model"], label="Model (Cₜ local, smoothed)")
+
+plt.xlabel("Turns (t)")
+plt.ylabel("Normalized Coherence (Cₜ)")
+plt.xlim(df_sim["turn"].min(), df_sim["turn"].max())
+plt.grid(True, alpha=0.3)
+plt.legend()
+plt.tight_layout()
+
+# 6) Guardar en alta resolución
+output_name = "figure3_simulated.png"
+plt.savefig(output_name, dpi=300)
+print(f"Figura guardada como: {output_name}")
+plt.show()
+
+# 7) (Opcional) Descargar la figura
+from google.colab import files
+files.download(output_name)
